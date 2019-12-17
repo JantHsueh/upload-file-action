@@ -1,0 +1,27 @@
+name: 'Upload File Action'
+description: 'upload file'
+author: 'Jant Hsueh(薛瑄)'
+branding:
+  icon: arrow-right-circle
+  color: gray-dark
+inputs:
+  url:
+    description: 'Web request URL endpoint'
+    required: true
+  method:
+    description: 'Web request method (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)'
+    required: true
+    default: POST
+  forms:
+    description: Data to be transmitted,such as key, pwd, etc. Use json format
+    required: false
+  fileForms:
+    description: Files to be transferred,such as 'file','image' etc. Use json format
+    required: false
+
+outputs:
+  output:
+    description: 'data output from the upload file'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
