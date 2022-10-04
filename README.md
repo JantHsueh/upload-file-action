@@ -23,7 +23,7 @@ This is an example of upload apk to pgyer.com(蒲公英网站)
 | ---------- | -------- | ------------------------------------------------------------ |
 | `url`      | `true`   | Web request URL endpoint                                     |
 | `forms`  | `false`  | Data to be transmitted,such as key, pwd, etc. Use json format |
-| `fileForms`  | `false`  | Files to be transferred,such as 'file','image' etc. Use json format |
+| `fileForms`  | `true`  | Files to be transferred,such as 'file','image' etc. Use json format. Use empty array if you have no data  to send. |
 
 
 ## Outputs
